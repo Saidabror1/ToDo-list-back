@@ -16,7 +16,7 @@ app.use(cors());
 mongoose
     .connect(process.env.MONGODB_URL, {
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        useUnifiedTopology: false
     })
     .then(() => console.log("MongoDb ulandi"))
     .catch((err) => console.error(err));
